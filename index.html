@@ -1,108 +1,184 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
 <meta charset="UTF-8">
-<title>Aincraft Studio</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aincraft Studio</title>
 
 <style>
 
 body{
-font-family: Arial;
+font-family: Arial, sans-serif;
 background:#0f0f0f;
 color:white;
-text-align:center;
 margin:0;
+text-align:center;
 }
 
 header{
-padding:40px;
+padding:60px 20px;
 background:#151515;
 }
 
 h1{
 margin:0;
-font-size:40px;
+font-size:44px;
+}
+
+.subtitle{
+color:#bbbbbb;
+margin-top:10px;
 }
 
 section{
-padding:40px;
+padding:60px 20px;
+}
+
+.container{
+max-width:900px;
+margin:auto;
+}
+
+.games{
+display:grid;
+grid-template-columns:1fr;
+gap:30px;
+margin-top:40px;
 }
 
 .game{
 background:#1c1c1c;
-padding:25px;
-margin:20px;
-border-radius:12px;
+padding:30px;
+border-radius:14px;
+transition:0.2s;
 }
 
-a{
-color:#00ffae;
+.game:hover{
+transform:translateY(-4px);
+background:#222;
+}
+
+.game h3{
+margin-top:0;
+}
+
+.badge{
+display:inline-block;
+margin-top:10px;
+padding:6px 12px;
+background:#00c896;
+color:#002e24;
+border-radius:20px;
+font-size:14px;
+font-weight:bold;
+}
+
+.button{
+display:inline-block;
+margin-top:15px;
+padding:10px 18px;
+border-radius:8px;
+background:#00c896;
+color:#002e24;
 text-decoration:none;
-font-size:18px;
+font-weight:bold;
+}
+
+.button:hover{
+opacity:0.85;
+}
+
+.about{
+background:#151515;
+border-radius:14px;
+padding:30px;
 }
 
 footer{
-padding:30px;
+padding:40px 20px;
 background:#151515;
+margin-top:60px;
+color:#aaaaaa;
 }
 
 </style>
-
 </head>
 
 <body>
 
 <header>
-
 <h1>Aincraft Studio</h1>
-<p>Indie Mobile Game Developer</p>
-
+<div class="subtitle">Indie Mobile Game Developer</div>
 </header>
 
 <section>
+<div class="container">
 
 <h2>Current Projects</h2>
+
+<div class="games">
 
 <div class="game">
 <h3>도도고치</h3>
 <p>귀여운 캐릭터와 함께 성장하는 모바일 게임</p>
 <p>현재 내부 테스트 진행 중</p>
+<span class="badge">Android Test</span>
+<br>
+<a class="button" href="#">게임 소개 예정</a>
 </div>
 
 <div class="game">
 <h3>스도쿠</h3>
 <p>편하게 즐길 수 있는 퍼즐 게임</p>
 <p>출시 준비 중</p>
+<span class="badge">Puzzle</span>
+<br>
+<a class="button" href="#">게임 소개 예정</a>
 </div>
 
+</div>
+
+</div>
 </section>
 
 <section>
+<div class="container">
 
-<h2>About</h2>
+<h2>About Studio</h2>
 
+<div class="about">
 <p>
-Aincraft Studio는 1인 인디 게임 개발 스튜디오입니다.<br>
-작지만 오래 즐길 수 있는 모바일 게임을 만드는 것을 목표로 합니다.
+Aincraft Studio는 혼자서 모바일 게임을 개발하는 인디 게임 스튜디오입니다.
 </p>
 
+<p>
+작지만 오래 즐길 수 있는 게임을 만드는 것을 목표로 합니다.
+</p>
+
+<p>
+현재 <b>도도고치</b>와 <b>스도쿠 게임</b>을 개발 중이며
+앞으로 다양한 모바일 게임을 계속 출시할 예정입니다.
+</p>
+
+</div>
+
+</div>
 </section>
 
 <section>
+<div class="container">
 
 <h2>Contact</h2>
 
-<p>
-문의: your@email.com
-</p>
+<p>테스트 문의 / 협업 문의</p>
 
+<p><b>your@email.com</b></p>
+
+</div>
 </section>
 
 <footer>
-
-<p>© 2026 Aincraft Studio</p>
-
+© 2026 Aincraft Studio
 </footer>
 
 </body>
